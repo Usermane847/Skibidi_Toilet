@@ -1,0 +1,196 @@
+.title-label{
+    color: aliceblue;
+    text-align: center;
+    font-size: 70px;
+    background-color: darkblue;
+    font-family: fantasy;
+}
+
+.profile-pic-1 {
+    width:50%;
+    position: relative;
+    top: 100px;
+    display: block;
+    margin: auto;
+    border: solid 5px rgba(3, 206, 241, 0.845);
+    border-radius: 20px;
+}
+
+
+.table-1 .table-header{
+    color: rgb(255, 255, 255);
+    border: solid 5px rgb(0, 0, 0);
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 24px;
+}
+
+
+
+.table-1{
+    color: rgb(0, 0, 0);
+    border: solid 5px rgb(0, 0, 0);
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.table-1 td {
+    border: solid 1px rgb(0, 1, 1);
+    width: 33.33%;
+}
+
+
+
+.fade-in-label{
+    background-color: black;
+    color: rgb(254, 254, 254);
+    font-size: 5px;
+    text-align:center;
+    padding: 24px;
+    opacity: 0;
+    animation: FadeIn 1s ease-in forwards;
+}
+
+@keyframes FadeIn{
+    from{
+        opacitiy: 0;
+        font-size: 5px;
+    }
+
+    to{
+        opacity: 1;
+        font-size: 25px;
+    }
+}
+
+.color-changing-label{
+    background-color:red;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    animation: colorChangingAnim 2s infinite;
+}
+
+@keyframes colorChangingAnim{
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color:green;
+    }
+    50%{
+        background-color:blue;
+    }
+    75%{
+        background-color: rgb(5, 247, 114);
+    }
+    100%{
+        background-color: rgb(255, 196, 0);
+    }
+}
+
+.horizontal-sliding-label{
+    background-color: black;
+    color:aliceblue;
+    text-align:center;
+    padding: 30px;
+    font-size: 40px;
+    animation: slideInAnim 1s ease-out;
+}
+
+@keyframes slideInAnim{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.horizontal-sliding-label-2{
+    background-color: black;
+    color:aliceblue;
+    text-align:center;
+    padding: 30px;
+    font-size: 40px;
+    animation: slideInAnim2 1s ease-out;
+}
+
+@keyframes slideInAnim2 {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+
+.container{
+    background-color: aqua;
+    height: 30vh; /*vh - viewport height*/
+    align-items: center;
+    justify-content: center;
+    display: flex;/*Allows us to align items with any size in a container*/
+}
+.spin{
+    color:azure;
+    font-size: 30px;
+    animation:spin-anim 2s linear infinite;
+}
+
+@keyframes spin-anim {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.pulsate {
+    font: size 2rem;/* rem - a unit of measurement for size */
+    animation: pulsating-anim 1s ease-in-out infinite;
+}
+
+
+@keyframes pulsating-anim{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(4);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+.glow{
+    background-color: #ff0;
+    font-size: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: glowing-anim 1s alternate infinite;
+}
+
+@keyframes glowing-anim{
+    0%, 100% {
+        box-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0;
+    }
+    50% {
+        box-shadow: 0 0 20px #ff0, 0 0 40px #ff0, 0 0 60px #ff0;
+    }
+
+}
